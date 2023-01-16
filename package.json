@@ -1,6 +1,6 @@
 {
 	"name": "a-nailbiters-worst-enemy",
-	"version": "0.0.1",
+	"version": "0.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
