@@ -8,6 +8,16 @@ Here I'll list features that I want to implement to reach a particular version. 
 
 ## Version 0.2
 
-- [ ] all the graphql requests should be located in a seperate module (instead of everywhere in server files), because it's a little 💦 like this
-- [ ] passwords are hashed
-- [ ] the sign up page has an actual page and a form
+- [x] ~~all the graphql requests should be located in a seperate module (instead of everywhere in server files), because it's a little 💦 like this~~
+- [x] user authentication works well (with error messages and everything)
+- [x] passwords are hashed
+- [x] the sign up page has an actual page and a form
+
+The request code seperation is _een zorg voor later_
+
+Update 20 minutes later: I fucking did succeed in the whole splitting up thing! Turns out the _zorg voor later_ ain't so much a _zorg voor later_ no more
+
+## Version 0.3
+
+- [ ] user can use sign up page to create an account
+- [ ] user can click an "i forgor 💀" button for their password and email

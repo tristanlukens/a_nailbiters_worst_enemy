@@ -2,9 +2,7 @@
 
 declare namespace App {
 	// interface Error {}
-	interface Locals {
-		username: Writable<string>;
-	}
+	// interface Locals {}
 	// interface PageData {}
 	// interface Platform {}
 }
