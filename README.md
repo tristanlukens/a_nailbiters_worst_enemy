@@ -26,7 +26,7 @@ Update 20 minutes later: I fucking did succeed in the whole splitting up thing! 
 -   [x] the pronoun dropdown menu looks terrible on safari
 -   [x] metadata (s-head)
 
-\*scrapped — users can go fuck themselves if they forget their credentials
+\*scrapped — users can go fuck themselves if they forget their credentials\n
 \*\*pushed to 0.4 in the cleanup stage
 
 ### Version 0.4
