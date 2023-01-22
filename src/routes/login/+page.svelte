@@ -6,6 +6,11 @@
 	import { page } from '$app/stores';
 </script>
 
+<svelte:head>
+	<title>A Nailbiter's Worst Enemy | Login</title>
+	<meta name="description" content="Log in to your account for A Nailbiter's Worst Enemy" />
+</svelte:head>
+
 <main class="flex flex-col justify-center items-center h-screen">
 	{#if $page.form?.missing}
 		<Error>Fill in all fields to login.</Error>

@@ -22,7 +22,7 @@ Update 20 minutes later: I fucking did succeed in the whole splitting up thing! 
 -   [x] user can use sign up page to create an account
 -   [ ] ~~user can click an "i forgor 💀" button for their password and email~~\*
 -   [ ] ~~everything works with the user type~~\*\*
--   [ ] there should be a remember me button on the fucking register page
+-   [x] there should be a remember me button on the fucking register page
 -   [x] the pronoun dropdown menu looks terrible on safari
 -   [x] metadata (s-head)
 

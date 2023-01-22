@@ -4,6 +4,14 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>A Nailbiter's Worst Enemy — Quitting</title>
+	<meta
+		name="description"
+		content="Putting more pressure on trying to quit by keeping track of the number of days you've been clean. There's no better way."
+	/>
+</svelte:head>
+
 <div class="flex flex-col items-center justify-center h-screen space-y-10">
 	<h1>A Nailbiter's Worst Enemy</h1>
 	{#if !data.sessionid}

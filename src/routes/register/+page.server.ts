@@ -13,33 +13,39 @@ export const actions: Actions = {
 	register: async ({ request, cookies }) => {
 		const formData = await request.formData();
 
-		const user: User = {
+		const credentials: User = {
 			firstName: formData.get('firstName') as string,
 			email: formData.get('email') as string,
-			pronoun: formData.get('pronoun') as string,
-			password: formData.get('password') as string
+			pronoun: formData.get('pronoun') as string
 		};
 
-		if (!user?.firstName || !user?.email || !user?.pronoun || !user?.password) {
-			return fail(400, { user, missing: true });
+		const password = formData.get('password') as string;
+
+		const rememberMe = formData.get('rememberMe') as string;
+
+		if (
+			!credentials.firstName ||
+			!credentials.email ||
+			credentials.pronoun == 'empty' ||
+			!password
+		) {
+			return fail(400, { user: credentials, missing: true });
 		}
 
-		// const { user } = await getUser(email as string);
+		const user = await createUser(credentials, hash(password));
 
-		// if (!user || user.password !== hash(password as string)) {
-		// 	return fail(400, { email, incorrect: true });
-		// }
+		if (user?.alreadyExists) {
+			return fail(422, { user, alreadyExists: true });
+		}
 
-		// if (!rememberMe) {
-		// 	cookies.set('sessionid', hash(email as string));
-		// } else {
-		// 	cookies.set('sessionid', hash(email as string), {
-		// 		expires: luxon.DateTime.now().plus({ weeks: 1 }).toJSDate()
-		// 	});
-		// }
+		if (!rememberMe) {
+			cookies.set('sessionid', hash(credentials.email as string));
+		} else {
+			cookies.set('sessionid', hash(credentials.email as string), {
+				expires: luxon.DateTime.now().plus({ weeks: 1 }).toJSDate()
+			});
+		}
 
-		// throw redirect(303, '/');
-
-		console.log('boo');
+		throw redirect(303, '/');
 	}
 };
