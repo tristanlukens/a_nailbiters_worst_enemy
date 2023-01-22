@@ -17,7 +17,7 @@ The request code seperation is _een zorg voor later_
 
 Update 20 minutes later: I fucking did succeed in the whole splitting up thing! Turns out the _zorg voor later_ ain't so much a _zorg voor later_ no more
 
-## Version 0.3
+### Version 0.3
 
 -   [x] user can use sign up page to create an account
 -   [ ] ~~user can click an "i forgor 💀" button for their password and email~~\*
@@ -29,12 +29,12 @@ Update 20 minutes later: I fucking did succeed in the whole splitting up thing! 
 \*scrapped — users can go fuck themselves if they forget their credentials
 \*\*pushed to 0.4 in the cleanup stage
 
-## Version 0.4
+### Version 0.4
 
 -   [ ] tab navigation on dropdown menu
 -   [ ] all the code that has already been written is cleaned
 
-## Version 0.5
+### Version 0.5
 
 -   [ ] account management page ui is done
 -   [ ] account management page can be used
