@@ -23,4 +23,15 @@ Update 20 minutes later: I fucking did succeed in the whole splitting up thing! 
 -   [ ] user can click an "i forgor 💀" button for their password and email
 -   [ ] everything works with the user type
 -   [ ] there should be a remember me button on the fucking register page
--   [ ] the pronoun dropdown menu looks terrible on safari
+-   [x] the pronoun dropdown menu looks terrible on safari
+-   [x] metadata (s-head)
+
+## Version 0.4
+
+-   [ ] tab navigation on dropdown menu
+-   [ ] all the code that has already been written is cleaned
+
+## Version 0.5
+
+-   [ ] account management page ui is done
+-   [ ] account management page can be used
