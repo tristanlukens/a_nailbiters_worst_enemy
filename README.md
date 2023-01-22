@@ -2,7 +2,7 @@
 
 Website that keeps track of how many days you haven't bit your nails. Because it's bad for you, your health and the overall look of your hands.
 
-# Roadmap
+## Roadmap
 
 Here I'll list features that I want to implement to reach a particular version. The app's on version 0.1 at the time of writing.
 
