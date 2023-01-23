@@ -27,6 +27,7 @@ Update 20 minutes later: I fucking did succeed in the whole splitting up thing! 
 -   [x] metadata (s-head)
 
 \*scrapped — users can go fuck themselves if they forget their credentials
+
 \*\*pushed to 0.4 in the cleanup stage
 
 ### Version 0.4
