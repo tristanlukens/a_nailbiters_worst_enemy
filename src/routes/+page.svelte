@@ -12,7 +12,7 @@
 	/>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center h-screen space-y-10">
+<div class="flex h-screen flex-col items-center justify-center space-y-10">
 	<h1>A Nailbiter's Worst Enemy</h1>
 	{#if !data.sessionid}
 		<p>You are not logged in.</p>

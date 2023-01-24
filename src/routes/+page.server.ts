@@ -12,7 +12,6 @@ export const actions: Actions = {
 	logout: async ({ cookies }) => {
 		cookies.delete('sessionid');
 
-		// otherwise the ?/logout form action name will still be visible in the url
-		throw redirect(303, '/');
+		throw redirect(303, '/'); // otherwise the ?/logout form action name will still be visible in the url
 	}
 };

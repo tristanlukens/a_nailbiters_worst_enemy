@@ -2,6 +2,6 @@
 	import '../app.css';
 </script>
 
-<main class="flex flex-col justify-center items-center h-fit min-h-screen py-8 relative">
+<main class="relative flex h-fit min-h-screen flex-col items-center justify-center py-8">
 	<slot />
 </main>

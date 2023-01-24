@@ -8,7 +8,7 @@
 
 <form
 	use:enhance
-	class="flex flex-col w-3/4 md:w-1/2 lg:w-1/3 xl:w-96 space-y-2"
+	class="flex w-3/4 flex-col space-y-2 md:w-1/2 lg:w-1/3 xl:w-96"
 	method="POST"
 	action="?/register"
 >
@@ -25,7 +25,7 @@
 			name="firstName"
 			id="firstName"
 			type="firstName"
-			class="border-2 rounded px-2 py-1 min-w-full"
+			class="min-w-full rounded border-2 px-2 py-1"
 		/>
 	</div>
 	<div>
@@ -35,12 +35,12 @@
 			id="email"
 			type="email"
 			value={$page.form?.email ?? ''}
-			class="border-2 rounded px-2 py-1 min-w-full"
+			class="min-w-full rounded border-2 px-2 py-1"
 		/>
 	</div>
 	<div>
 		<label for="pronoun">Pronoun</label>
-		<select name="pronoun" class="bg-white border-2 rounded px-2 py-1 min-w-full" id="pronoun">
+		<select name="pronoun" class="min-w-full rounded border-2 bg-white px-2 py-1" id="pronoun">
 			<option value="empty" />
 			<option value="his">his</option>
 			<option value="her">her</option>
@@ -53,7 +53,7 @@
 			name="password"
 			id="password"
 			type="password"
-			class="border-2 rounded px-2 py-1 min-w-full"
+			class="min-w-full rounded border-2 px-2 py-1"
 		/>
 	</div>
 
@@ -66,13 +66,13 @@
 	<!-- TODO: use margin cleanly here (and on this whole page) -->
 	<div class="pt-4">
 		<button
-			class="block max-w-fit mx-auto uppercase bg-lime-500 font-bold tracking-wide rounded shadow text-white py-2 px-8 hover:bg-opacity-70 transition"
+			class="mx-auto block max-w-fit rounded bg-lime-500 py-2 px-8 font-bold uppercase tracking-wide text-white shadow transition hover:bg-opacity-70"
 			>register</button
 		>
 
 		<hr class="mt-6" />
 
-		<p class="mt-4 text-xs text-justify leading-relaxed">
+		<p class="mt-4 text-justify text-xs leading-relaxed">
 			All data you provide is stored solely for the purposes of this site. Your data will
 			never be sold to or shared with anyone. You may always edit your data, and completely
 			delete your account at any time.
